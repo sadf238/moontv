@@ -4,19 +4,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async headers() {
-    return [
+  headers: function() {
+    return Promise.resolve([
       {
         source: '/(.*)',
         headers: [
           {
             key: 'referrer-policy',
             value: 'no-referrer',
-          },
-        ],
-      },
-    ];
-  },
+          }
+        ]
+      }
+    ]);
+  }
 };
 
 module.exports = nextConfig;
