@@ -1,5 +1,5 @@
 {
-  "image_proxy": "https://wmimg.com/proxy.php?url=",
+  "image_proxy": "https://api.allorigins.win/raw?url=",
   "cache_time": 7200,
   "api_site": {
     "dyttzy": {
